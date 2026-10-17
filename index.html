@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Graveyard of FOSS - Killed by Penguins</title>
+  <meta name="description" content="A graveyard of Linux distributions, FOSS apps, services and hardware that have been discontinued." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>%F0%9F%AA%A6</text></svg>" />
+</head>
+<body>
+  <header class="hero">
+    <pre class="banner" aria-hidden="true">
+    .--.
+   |o_o |
+   |:_/ |
+  //   \ \
+ (|     | )
+/'\_   _/'\
+\___)=(___/
+  </pre>
+
+    <h1 class="title">Killed by Penguins</h1>
+    <p class="lede">A graveyard of Linux distributions, FOSS apps, services and hardware.</p>
+    <p class="counter" id="counter" aria-live="polite"># 12 souls interred</p>
+  </header>
+
+  <hr />
+
+  <div class="controls" role="search">
+    <label for="search">/ <input id="search" type="search" placeholder="grep..." autocomplete="off" spellcheck="false" aria-label="search the graveyard" /></label>
+    <span class="filters" id="filters" role="group" aria-label="filter by category">
+      <button type="button" data-category="all" aria-pressed="true">[all: 12]</button>
+      <button type="button" data-category="distribution" aria-pressed="false">[distro: 5]</button>
+      <button type="button" data-category="app" aria-pressed="false">[app: 3]</button>
+      <button type="button" data-category="service" aria-pressed="false">[service: 4]</button>
+      <button type="button" data-category="hardware" aria-pressed="false">[hardware: 0]</button>
+    </span>
+  </div>
+
+  <hr />
+
+  <main>
+    <ul id="graveyard" class="graveyard">
+      <li class="entry" data-category="distribution" data-name="sabayon linux" data-desc="italian gentoo-based distro that precompiled the world so you didn&#39;t have to. slipped into the abyss at 14 after the maintainer waved the entropy package manager a fond farewell.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2005—2020</div>
+          <div class="tombstone-category">distro</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Sabayon_Linux" target="_blank" rel="noopener noreferrer">Sabayon Linux</a></h2>
+          <p class="entry-desc">Italian Gentoo-based distro that precompiled the world so you didn&#39;t have to. Slipped into the abyss at 14 after the maintainer waved the Entropy package manager a fond farewell.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="distribution" data-name="scientific linux" data-desc="fermilab and cern&#39;s beloved rhel rebuild, kept particle physicists out of dependency hell for fifteen years. rested in peace once centos 8 showed up to take over the beaker.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2004—2019</div>
+          <div class="tombstone-category">distro</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Scientific_Linux" target="_blank" rel="noopener noreferrer">Scientific Linux</a></h2>
+          <p class="entry-desc">Fermilab and CERN&#39;s beloved RHEL rebuild, kept particle physicists out of dependency hell for fifteen years. Rested in peace once CentOS 8 showed up to take over the beaker.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="distribution" data-name="antergos" data-desc="arch for people who didn&#39;t want to type &#39;pacman -s&#39; fifty times. pulled the numix-themed plug at six, citing a single maintainer who&#39;d had enough of being on call.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2013—2019</div>
+          <div class="tombstone-category">distro</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Antergos" target="_blank" rel="noopener noreferrer">Antergos</a></h2>
+          <p class="entry-desc">Arch for people who didn&#39;t want to type &#39;pacman -S&#39; fifty times. Pulled the Numix-themed plug at six, citing a single maintainer who&#39;d had enough of being on call.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="app" data-name="bazaar" data-desc="canonical&#39;s distributed version control system that tried to be nicer than git by, well, not being git. emigrated to the attic at 13 with the rest of launchpad&#39;s quieter tools.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2005—2018</div>
+          <div class="tombstone-category">app</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/GNU_Bazaar" target="_blank" rel="noopener noreferrer">Bazaar</a></h2>
+          <p class="entry-desc">Canonical&#39;s distributed version control system that tried to be nicer than git by, well, not being git. Emigrated to the attic at 13 with the rest of Launchpad&#39;s quieter tools.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="app" data-name="ubuntu software center" data-desc="replaced synaptic with something that wouldn&#39;t scare the people who asked why their printer wouldn&#39;t print. stepped aside at 5 in favour of the gnome software store.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2009—2015</div>
+          <div class="tombstone-category">app</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Ubuntu_Software_Center" target="_blank" rel="noopener noreferrer">Ubuntu Software Center</a></h2>
+          <p class="entry-desc">Replaced Synaptic with something that wouldn&#39;t scare the people who asked why their printer wouldn&#39;t print. Stepped aside at 5 in favour of the GNOME Software store.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="service" data-name="mozilla persona" data-desc="mozilla&#39;s password-free, email-as-identity login system that nobody but nerds ever adopted. joined the choir invisible at 3, replaced by &#39;just use oauth, you cowards&#39;.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2011—2014</div>
+          <div class="tombstone-category">service</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Mozilla_Persona" target="_blank" rel="noopener noreferrer">Mozilla Persona</a></h2>
+          <p class="entry-desc">Mozilla&#39;s password-free, email-as-identity login system that nobody but nerds ever adopted. Joined the choir invisible at 3, replaced by &#39;just use OAuth, you cowards&#39;.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="service" data-name="ubuntu one" data-desc="canonical&#39;s cloud-storage, music-streaming, file-syncing &#39;we can compete with dropbox&#39; bet. dropped the bass for the last time at 5; 90 days later, all your files were someone else&#39;s problem.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2009—2014</div>
+          <div class="tombstone-category">service</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Ubuntu_One" target="_blank" rel="noopener noreferrer">Ubuntu One</a></h2>
+          <p class="entry-desc">Canonical&#39;s cloud-storage, music-streaming, file-syncing &#39;we can compete with Dropbox&#39; bet. Dropped the bass for the last time at 5; 90 days later, all your files were someone else&#39;s problem.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="service" data-name="google reader" data-desc="not linux, but the foss-adjacent rss reader that half the open-source web relied on. murdered at 7 to make a quarterly number look better; the resulting petitions became their own genre.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2005—2013</div>
+          <div class="tombstone-category">service</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Google_Reader" target="_blank" rel="noopener noreferrer">Google Reader</a></h2>
+          <p class="entry-desc">Not Linux, but the FOSS-adjacent RSS reader that half the open-source web relied on. Murdered at 7 to make a quarterly number look better; the resulting petitions became their own genre.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="distribution" data-name="mepis linux" data-desc="debian-derived, kde-flavoured and famously easy on the grandparents. died of natural causes at 10 when its founder wandered off toward lubuntu pastures.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2003—2013</div>
+          <div class="tombstone-category">distro</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/MEPIS" target="_blank" rel="noopener noreferrer">MEPIS Linux</a></h2>
+          <p class="entry-desc">Debian-derived, KDE-flavoured and famously easy on the grandparents. Died of natural causes at 10 when its founder wandered off toward Lubuntu pastures.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="app" data-name="arista transcoder" data-desc="sweet little gnome transcoder that wrapped ffmpeg in a friendly face. pushed up daisies at 2 when its developer got a real job and the gstreamer pipe under it rusted through.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2010—2013</div>
+          <div class="tombstone-category">app</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Arista_Transcoder" target="_blank" rel="noopener noreferrer">Arista Transcoder</a></h2>
+          <p class="entry-desc">Sweet little GNOME transcoder that wrapped FFmpeg in a friendly face. Pushed up daisies at 2 when its developer got a real job and the GStreamer pipe under it rusted through.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="service" data-name="flock (browser)" data-desc="chromium-based social-networking browser loved by the early web 2.0 crowd. closed its tabs for the last time at 6 when its users had all moved to actual facebook.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">2005—2011</div>
+          <div class="tombstone-category">service</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Flock_(web_browser)" target="_blank" rel="noopener noreferrer">Flock (browser)</a></h2>
+          <p class="entry-desc">Chromium-based social-networking browser loved by the early Web 2.0 crowd. Closed its tabs for the last time at 6 when its users had all moved to actual Facebook.</p>
+        </div>
+      </li>
+      <li class="entry" data-category="distribution" data-name="corel linux" data-desc="corel&#39;s very public attempt to make linux the next windows. survived a single birthday cake before the bean counters rolled the credits. it was about 1 year old.">
+        <div class="entry-stone">
+          <pre class="tombstone" aria-hidden="true">   .--.  
+  |RIP|  
+  |   |  
+  |___|  
+  /   \  
+ /_____\ 
+ |     | </pre>
+          <div class="tombstone-years">1999—2000</div>
+          <div class="tombstone-category">distro</div>
+        </div>
+        <div class="entry-inscription">
+          <h2 class="entry-name"><a href="https://en.wikipedia.org/wiki/Corel_Linux" target="_blank" rel="noopener noreferrer">Corel Linux</a></h2>
+          <p class="entry-desc">Corel&#39;s very public attempt to make Linux the next Windows. Survived a single birthday cake before the bean counters rolled the credits. It was about 1 year old.</p>
+        </div>
+      </li>
+    </ul>
+    <p id="empty" class="empty" hidden>-- no matches --</p>
+  </main>
+
+  <hr />
+
+  <footer>
+    <p>$ cat graveyard.json | jq 'length'</p>
+      <p>contribute: edit <a href="https://github.com/the-penguins-club/killby/blob/main/graveyard.json"><code>graveyard.json</code></a> and open a PR</p>
+  </footer>
+
+  <noscript>
+    <p class="empty">Search and filter are unavailable without JavaScript, but the entries above are real.</p>
+  </noscript>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

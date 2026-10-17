@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Sabayon Linux",
+    "category": "distribution",
+    "openDate": "2005-11-01",
+    "deathDate": "2020-07-29",
+    "description": "Italian Gentoo-based distro that precompiled the world so you didn't have to. Slipped into the abyss at 14 after the maintainer waved the Entropy package manager a fond farewell.",
+    "link": "https://en.wikipedia.org/wiki/Sabayon_Linux"
+  },
+  {
+    "name": "Scientific Linux",
+    "category": "distribution",
+    "openDate": "2004-05-01",
+    "deathDate": "2019-12-31",
+    "description": "Fermilab and CERN's beloved RHEL rebuild, kept particle physicists out of dependency hell for fifteen years. Rested in peace once CentOS 8 showed up to take over the beaker.",
+    "link": "https://en.wikipedia.org/wiki/Scientific_Linux"
+  },
+  {
+    "name": "Antergos",
+    "category": "distribution",
+    "openDate": "2013-05-01",
+    "deathDate": "2019-05-01",
+    "description": "Arch for people who didn't want to type 'pacman -S' fifty times. Pulled the Numix-themed plug at six, citing a single maintainer who'd had enough of being on call.",
+    "link": "https://en.wikipedia.org/wiki/Antergos"
+  },
+  {
+    "name": "MEPIS Linux",
+    "category": "distribution",
+    "openDate": "2003-05-01",
+    "deathDate": "2013-06-19",
+    "description": "Debian-derived, KDE-flavoured and famously easy on the grandparents. Died of natural causes at 10 when its founder wandered off toward Lubuntu pastures.",
+    "link": "https://en.wikipedia.org/wiki/MEPIS"
+  },
+  {
+    "name": "Corel Linux",
+    "category": "distribution",
+    "openDate": "1999-11-01",
+    "deathDate": "2000-11-01",
+    "description": "Corel's very public attempt to make Linux the next Windows. Survived a single birthday cake before the bean counters rolled the credits. It was about 1 year old.",
+    "link": "https://en.wikipedia.org/wiki/Corel_Linux"
+  },
+  {
+    "name": "Ubuntu Software Center",
+    "category": "app",
+    "openDate": "2009-10-01",
+    "deathDate": "2015-04-01",
+    "description": "Replaced Synaptic with something that wouldn't scare the people who asked why their printer wouldn't print. Stepped aside at 5 in favour of the GNOME Software store.",
+    "link": "https://en.wikipedia.org/wiki/Ubuntu_Software_Center"
+  },
+  {
+    "name": "Bazaar",
+    "category": "app",
+    "openDate": "2005-03-01",
+    "deathDate": "2018-03-01",
+    "description": "Canonical's distributed version control system that tried to be nicer than git by, well, not being git. Emigrated to the attic at 13 with the rest of Launchpad's quieter tools.",
+    "link": "https://en.wikipedia.org/wiki/GNU_Bazaar"
+  },
+  {
+    "name": "Arista Transcoder",
+    "category": "app",
+    "openDate": "2010-06-01",
+    "deathDate": "2013-04-01",
+    "description": "Sweet little GNOME transcoder that wrapped FFmpeg in a friendly face. Pushed up daisies at 2 when its developer got a real job and the GStreamer pipe under it rusted through.",
+    "link": "https://en.wikipedia.org/wiki/Arista_Transcoder"
+  },
+  {
+    "name": "Ubuntu One",
+    "category": "service",
+    "openDate": "2009-04-01",
+    "deathDate": "2014-07-31",
+    "description": "Canonical's cloud-storage, music-streaming, file-syncing 'we can compete with Dropbox' bet. Dropped the bass for the last time at 5; 90 days later, all your files were someone else's problem.",
+    "link": "https://en.wikipedia.org/wiki/Ubuntu_One"
+  },
+  {
+    "name": "Mozilla Persona",
+    "category": "service",
+    "openDate": "2011-07-01",
+    "deathDate": "2014-11-30",
+    "description": "Mozilla's password-free, email-as-identity login system that nobody but nerds ever adopted. Joined the choir invisible at 3, replaced by 'just use OAuth, you cowards'.",
+    "link": "https://en.wikipedia.org/wiki/Mozilla_Persona"
+  },
+  {
+    "name": "Google Reader",
+    "category": "service",
+    "openDate": "2005-10-07",
+    "deathDate": "2013-07-01",
+    "description": "Not Linux, but the FOSS-adjacent RSS reader that half the open-source web relied on. Murdered at 7 to make a quarterly number look better; the resulting petitions became their own genre.",
+    "link": "https://en.wikipedia.org/wiki/Google_Reader"
+  },
+  {
+    "name": "Flock (browser)",
+    "category": "service",
+    "openDate": "2005-04-01",
+    "deathDate": "2011-04-01",
+    "description": "Chromium-based social-networking browser loved by the early Web 2.0 crowd. Closed its tabs for the last time at 6 when its users had all moved to actual Facebook.",
+    "link": "https://en.wikipedia.org/wiki/Flock_(web_browser)"
+  }
+]

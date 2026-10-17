@@ -1,0 +1,377 @@
+/* killedbypenguins — terminal / skeleton styling */
+
+:root {
+  /* dark mode (default) */
+  --fg:       #cccccc;
+  --fg-dim:   #666666;
+  --rule:     #333333;
+  --bg:       #000000;
+  --hot:      #ffffff;
+  --hot-bg:   #1a1a1a;
+  --font:     ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fg:       #222222;
+    --fg-dim:   #777777;
+    --rule:     #cccccc;
+    --bg:       #ffffff;
+    --hot:      #000000;
+    --hot-bg:   #e5e5e5;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover, a:focus { color: var(--hot); background: var(--hot-bg); }
+
+::selection { background: var(--fg); color: var(--bg); }
+
+hr {
+  border: 0;
+  border-top: 1px dashed var(--rule);
+  margin: 1.5rem 0;
+}
+
+/* layout — wide enough for the graveyard grid */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+/* hero — banner, title, lede, counter centered as a block */
+.hero {
+  text-align: center;
+  margin: 0 auto 1rem;
+  max-width: 720px;
+}
+
+/* banner */
+.banner {
+  margin: 0 auto 1rem;
+  display: inline-block;
+  color: var(--fg);
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: pre;
+  user-select: none;
+  text-align: left;
+}
+
+.title {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--hot);
+  letter-spacing: 0.02em;
+}
+
+.lede {
+  margin: 0 0 0.5rem;
+  color: var(--fg);
+}
+
+.counter {
+  margin: 0;
+  color: var(--fg-dim);
+}
+
+/* controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.controls > label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--fg-dim);
+}
+
+#search {
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  color: var(--hot);
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.1rem 0.25rem;
+  width: 16rem;
+  max-width: 100%;
+}
+#search::placeholder { color: var(--fg-dim); }
+#search:focus {
+  outline: none;
+  border-bottom-color: var(--fg);
+}
+
+.filters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  color: var(--fg-dim);
+}
+.filters button {
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  color: var(--fg-dim);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.filters button:hover { color: var(--fg); }
+.filters button[aria-pressed="true"] {
+  color: var(--bg);
+  background: var(--fg);
+  padding: 0 0.35rem;
+}
+
+/* graveyard — grid of mini tombstones */
+.graveyard {
+  list-style: none;
+  margin: 0;
+  padding: 1.5rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 2rem 1.5rem;
+}
+
+.entry {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px dotted var(--rule);
+  border-radius: 2px;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+.entry:hover,
+.entry:focus-within {
+  border-color: var(--fg);
+  background: var(--hot-bg);
+}
+.entry[hidden] { display: none; }
+
+/* left column — tombstone, category, years */
+.entry-stone {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 90px;
+}
+
+/* right column — name + description */
+.entry-inscription {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tombstone {
+  margin: 0;
+  color: var(--fg);
+  font-size: 11px;
+  line-height: 1.1;
+  white-space: pre;
+  user-select: none;
+  text-align: center;
+}
+
+.tombstone-years {
+  color: var(--hot);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0.15rem 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--fg);
+  border-radius: 2px;
+  background: var(--hot-bg);
+  text-transform: uppercase;
+}
+
+/* category — hardcoded dark fill + bright text so it survives any browser dark-mode filter */
+.tombstone-category {
+  color: var(--cat-fg, #ffffff);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0.2rem 0.4rem;
+  text-align: center;
+  background: var(--cat-bg, #1a1a1a);
+  border: 1px solid var(--cat-bd, #555555);
+  border-radius: 2px;
+  display: inline-block;
+}
+.tombstone-category::before { content: "["; margin-right: 1px; }
+.tombstone-category::after  { content: "]"; margin-left: 1px; }
+
+/* per-category accent colours. --cat-* is consumed by .tombstone-category above. */
+.entry[data-category="distribution"] { --cat-fg: #6aff8a; --cat-bg: #0a1a0a; --cat-bd: #6aff8a; }
+.entry[data-category="app"]          { --cat-fg: #6ae0ff; --cat-bg: #0a1a1f; --cat-bd: #6ae0ff; }
+.entry[data-category="service"]      { --cat-fg: #ffc070; --cat-bg: #1f1408; --cat-bd: #ffc070; }
+.entry[data-category="hardware"]     { --cat-fg: #ff90b8; --cat-bg: #1f0a14; --cat-bd: #ff90b8; }
+
+@media (prefers-color-scheme: light) {
+  .entry[data-category="distribution"] { --cat-fg: #1f7a32; --cat-bg: #e8f7ec; --cat-bd: #1f7a32; }
+  .entry[data-category="app"]          { --cat-fg: #1a6f80; --cat-bg: #e6f4f8; --cat-bd: #1a6f80; }
+  .entry[data-category="service"]      { --cat-fg: #8a4f0a; --cat-bg: #faf0e0; --cat-bd: #8a4f0a; }
+  .entry[data-category="hardware"]     { --cat-fg: #8a2854; --cat-bg: #fae6ee; --cat-bd: #8a2854; }
+}
+
+.entry-name {
+  margin: 0;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: var(--hot);
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  word-break: break-word;
+}
+.entry-name a:hover { text-decoration-thickness: 2px; }
+
+.entry-desc {
+  margin: 0;
+  color: var(--fg);
+  font-size: 0.88em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.empty {
+  text-align: left;
+  color: var(--fg-dim);
+  padding: 1rem 0;
+}
+
+/* footer */
+footer {
+  margin-top: 1rem;
+  color: var(--fg-dim);
+}
+footer p { margin: 0.15rem 0; }
+
+/* ==== responsive ==== */
+
+/* small phones (≤400px) — tux gets smaller, hero padding tight */
+@media (max-width: 400px) {
+  body { padding: 0.75rem 0.6rem 1.5rem; }
+  .hero { max-width: 100%; }
+  .banner { font-size: 9px; }
+  .title { font-size: 1rem; }
+  .lede { font-size: 0.9em; }
+  .graveyard { padding: 0.75rem 0.1rem; gap: 1rem; }
+  .entry { padding: 0.75rem; gap: 0.75rem; }
+  .tombstone { font-size: 8px; }
+  .tombstone-years { font-size: 10px; padding: 0.1rem 0.4rem; }
+  .tombstone-category { font-size: 10px; padding: 0.15rem 0.3rem; }
+  .entry-stone { min-width: 64px; }
+  .entry-name { font-size: 0.95em; }
+  .entry-desc { font-size: 0.82em; }
+}
+
+/* phones (≤600px) — single column, controls stack, entry stays horizontal but tighter */
+@media (max-width: 600px) {
+  body { padding: 1rem 0.85rem 2rem; }
+  .hero { max-width: 100%; }
+  .banner { font-size: 10px; }
+  .title { font-size: 1.05rem; }
+  #search { width: 100%; max-width: 20rem; }
+  .controls { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .graveyard { grid-template-columns: 1fr; gap: 1.25rem; padding: 1rem 0.25rem; }
+  .entry { padding: 0.9rem; gap: 1rem; }
+  .tombstone { font-size: 9px; }
+  .entry-stone { min-width: 75px; }
+  footer { text-align: center; }
+}
+
+/* small tablets / large phones (≤480px) — entry stacks vertically (tombstone on top, text below) */
+@media (max-width: 480px) {
+  .entry { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+  .entry-stone {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+    gap: 0.6rem;
+  }
+  .tombstone { font-size: 10px; }
+  .tombstone-years { margin-top: 0; }
+  .tombstone-category { margin-top: 0; }
+}
+
+/* tablets portrait (601–900px) — single column for the grid, entry stays horizontal */
+@media (min-width: 601px) and (max-width: 900px) {
+  .graveyard { grid-template-columns: 1fr; gap: 1.5rem; max-width: 640px; margin: 0 auto; }
+  .banner { font-size: 11px; }
+}
+
+/* tablets landscape / small laptops (901–1200px) — two columns */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .graveyard { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1.25rem; }
+}
+
+/* very wide screens (>1600px) — cap the width and center, don't stretch too far */
+@media (min-width: 1600px) {
+  body { max-width: 1400px; padding: 2.5rem 2rem 3rem; }
+  .banner { font-size: 13px; }
+  .title { font-size: 1.4rem; }
+}
+
+/* very short screens — avoid pushing hero off-screen */
+@media (max-height: 500px) {
+  .banner { font-size: 9px; }
+  body { padding: 0.75rem 1rem 1.5rem; }
+}
+
+/* landscape phones — keep hero compact */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { max-width: 100%; }
+  .banner { display: none; }  /* hide the tux in cramped landscape — title still shows */
+}
+
+/* reduced motion — respect user preference */
+@media (prefers-reduced-motion: reduce) {
+  .entry { transition: none; }
+  * { scroll-behavior: auto; }
+}
